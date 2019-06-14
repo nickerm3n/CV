@@ -1,0 +1,57 @@
+.career {
+	color:#fff;
+	
+	&__title {
+		margin-bottom: 50px;
+	}
+
+	&__content:not(:last-child) {
+		margin-bottom: 50px;
+	}
+	
+	&__bar {
+		width: 30%;
+		background: $lightBlue;
+		padding:10px 20px;
+		position: relative;
+		@media (min-width: $width-md) {
+			width: 100%;
+		}
+
+		@media (min-width: $width-lg) {
+			width: 61%;
+		}
+		
+		&::after {
+			content:'';
+			@include pos($r:-20px, $t:0);
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 18px 0 18px 20px;
+			border-color: transparent transparent transparent $lightBlue;
+		}
+	}
+
+	&__description {
+		
+	}
+
+	&__place, &__role {
+		font-weight: 700;
+	}
+
+	&__place {
+		text-transform: uppercase;
+		padding: 10px 0;
+		margin-bottom: 25px;
+	}
+
+	&__role {
+		margin-bottom: 15px;
+	}
+
+	&__responsibility {
+		color: $grey;
+	}
+}

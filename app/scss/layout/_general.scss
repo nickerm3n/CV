@@ -30,3 +30,39 @@ body, html {
 html {
 	font: 400 16px/1.2 $prompt;
 }
+
+body {
+	padding-top: 1px;
+	background: url('../images/noise.png')
+}
+
+.container, .container-fluid {
+	padding-bottom: 80px;
+}
+
+.dot {
+	color: $lightBlue;
+}
+
+.title {
+	position: relative;
+	font-weight: 700;
+	letter-spacing: 2px;
+	display:inline-block;
+	// line-height: 5rem;
+	color: #fff;
+	font-size: 5rem;
+	
+	&.title-lg {
+		font-size: 4rem;
+		align-self: flex-start;
+		
+		@media (min-width: $width-md) {
+			font-size: 6rem;
+		}
+
+		@media (min-width: $width-lg) {
+			font-size: 7rem;
+		}
+	}
+}

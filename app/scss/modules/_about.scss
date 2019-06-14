@@ -1,0 +1,51 @@
+.about-me {
+	margin-top: 160px;
+	height: 65vh;
+	min-height: 667px;
+	background: url('../images/noise.png') top center no-repeat;
+	color: #fff;
+	
+	@media (min-width: $width-md) {
+		background: url('../images/portret.jpg') top center no-repeat;
+		background-size: cover;
+		height: 110vh;
+	}
+	
+	&__promo {
+		height:inherit;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+
+		@media (min-width: $width-md) {
+			justify-content: flex-end;
+		}
+
+		p {
+			line-height:1.4;
+			margin-top: 40px;
+			position: relative;
+			
+			// &::before {
+			// 	@include pos($t:80px, $l:-75px);
+			// 	font-family: 'Oswald', sans-serif;
+			// 	content: '”';
+			// 	line-height:0;
+			// 	font-size: 200px;
+			// 	filter: blur(2px);
+			// 	color: $lightBlue;
+			// 	opacity: .6;
+			// }
+		}
+	}
+}
+
+.about-me {
+	.row {
+		height: 100%
+	}
+	.col-md-9 {
+		height:inherit;
+	}
+}
