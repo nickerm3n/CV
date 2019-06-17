@@ -6,7 +6,7 @@
 	color: #fff;
 	
 	@media (min-width: $width-md) {
-		background: url('../images/portret.jpg') top center no-repeat;
+		background: url('../images/portret.png') top center no-repeat;
 		background-size: cover;
 		height: 110vh;
 	}
@@ -24,7 +24,6 @@
 
 		p {
 			line-height:1.4;
-			margin-top: 40px;
 			position: relative;
 			
 			// &::before {
