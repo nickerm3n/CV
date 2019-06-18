@@ -1,0 +1,24 @@
+.education {
+	color: #fff;
+	
+	.career__place {
+		margin-bottom: 10px;
+	}
+
+	&__list {
+		p:first-child {
+			padding-top: 10px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+		p,ul:not(:last-child) {
+			padding-bottom: 15px;
+		}
+
+
+	}
+}
+

@@ -1,0 +1,35 @@
+.portfolio {
+	
+	&__sliders {
+		width:100%;
+		margin:0 auto;
+	}
+
+	.slick-list, .slick-track, &__slider,  {
+		height:inherit;
+	}
+
+	&__slider {
+		height: 15rem;
+		
+		@media (min-width: $width-md) {
+			height: 40rem;
+		}
+		
+		// &:nth-child(1) {
+		// 	background: url('../images/slider/slider-1.jpg') top center no-repeat;
+		// 	background-size: cover;
+		// }
+
+		// &:nth-child(2) {
+		// 	background: url('../images/slider/slider-2.jpg') top center no-repeat;
+		// 	background-size: cover;
+		// }
+
+		// &:nth-child(3) {
+		// 	background: url('../images/slider/slider-3.jpg') top center no-repeat;
+		// 	background-size: cover;
+		// }
+	}
+
+}

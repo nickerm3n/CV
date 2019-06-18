@@ -8,10 +8,25 @@
 	&__content:not(:last-child) {
 		margin-bottom: 50px;
 	}
-	
+
 	&__bar {
-		width: 30%;
 		background: $lightBlue;
+		&::after {
+			border-color: transparent transparent transparent $lightBlue;
+		}
+	}
+
+	&__bar--white {
+		background: #fff;
+		color: #000;
+		font-weight: 700;
+		&::after {
+			border-color: transparent transparent transparent #fff;
+		}
+	}	
+
+	&__bar, &__bar--white {
+		width: 30%;
 		padding:10px 20px;
 		position: relative;
 		@media (min-width: $width-md) {
@@ -29,9 +44,9 @@
 			height: 0;
 			border-style: solid;
 			border-width: 18px 0 18px 20px;
-			border-color: transparent transparent transparent $lightBlue;
 		}
 	}
+	
 
 	&__description {
 		
