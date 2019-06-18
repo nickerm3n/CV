@@ -21,6 +21,11 @@
 		  infinite: true,
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
+		  arrows: true,
+		  prevArrow: '.fa-chevron-left',
+		  nextArrow: '.fa-chevron-right',
+		  speed: 700,
+  		  fade: true,
 		});
 
 
