@@ -1,0 +1,24 @@
+.footer {
+	height: 6.25rem;
+	background: darken($black, 25%);
+	position: relative;
+	color: $grey;
+	display: flex;
+	align-items: center;
+	
+	p {
+		padding-left: 50px;
+	}
+	
+	a {
+		@include align($vert: true, $hor: true, $pos: absolute);
+		text-decoration: none;
+		color: $grey;
+		font-size: 2.5rem;
+		transition: all .3s ease-out;
+		
+		&:hover {
+			color:#fff;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.contact {
+	padding-bottom: 0;
+	
+	i {
+		font-size: 1.9rem;
+		color: $lightBlue;
+	}
+
+	p {
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		font-family: $archivo;
+	}
+
+	p:not(:last-child) {
+		padding-bottom: 25px;
+	}
+
+	a {
+		padding-left: 30px;
+		text-decoration: none;
+		color: #fff;
+		font-size: 1.1rem;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
